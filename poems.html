@@ -2,21 +2,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <div style="background:orange;">
 <h2>All Poems</h2>
-    <script>
-var pdfFilesDirectory = '/poems/';
-
-// get auto-generated page 
-$.ajax({url: pdfFilesDirectory}).then(function(html) {
-    // create temporary DOM element
-    var document = $(html);
-
-    // find all links ending with .pdf 
-    document.find('a[href$=.txt]').each(function() {
-        var pdfName = $(this).text();
-        var pdfUrl = $(this).attr('href');
-
-        // do what you want here 
-    })
-});
-    </script>
+<a href="poems/uponthemeadow.txt">Upon the Meadow by Daniel John Jacob McJacobs Johnson</a>
 </div>
